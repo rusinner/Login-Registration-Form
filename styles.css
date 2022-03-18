@@ -26,6 +26,7 @@ body, input {
   background-image: linear-gradient(-45deg, #20dbc2 0%, #00bfa6 100%);
   transform: translateY(-50%);
   border-radius: 50%;
+  z-index: 6;
 }
 .container .btn {
   width: 150px;
@@ -42,6 +43,15 @@ body, input {
 }
 .container .btn:hover {
   background-color: #00bfa6;
+}
+.container .btn .transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 .container .forms-container {
   position: absolute;
@@ -133,6 +143,7 @@ body, input {
   left: 75%;
   display: grid;
   grid-template-columns: 1fr;
+  z-index: 5;
 }
 .container .signin-signup .sign-in-form {
   z-index: 2;
@@ -140,4 +151,47 @@ body, input {
 .container .signin-signup .sign-up-form {
   z-index: 1;
   opacity: 0;
+}
+
+.image {
+  width: 100%;
+}
+
+.panels-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.panels-container .panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 7;
+}
+.panels-container .content {
+  color: #fff;
+}
+.panels-container h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+.panels-container p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+.panels-container .left-panel {
+  padding: 3rem 17% 2rem 12%;
+}
+.panels-container .right-panel {
+  padding: 3rem 12% 2rem 17%;
+}
+.panels-container .right-panel .content, .panels-container .right-panel .image {
+  transform: translateX(800px);
 }/*# sourceMappingURL=styles.css.map */

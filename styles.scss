@@ -28,6 +28,7 @@ body,input{
         transform:translateY(-50%) ;
         border-radius: 50%;
         z-index: 6;
+        transition: 1.8s ease-in-out;
     }
 
     .btn{
@@ -177,6 +178,8 @@ body,input{
 
 .image{
     width:100%;
+    transition: .9s .6s ease-in-out;
+
 
 }
 
@@ -199,6 +202,7 @@ body,input{
 
         .content{
             color: #fff;
+            transition: .9s .6s ease-in-out;
 
         }
 
@@ -225,5 +229,14 @@ body,input{
         }
 }
 
+// Animation
 
+.container.sign-up-mode::before{
+    transform: translate(100%,-50%);
+    right: 52%;
+}
 
+.move-left-image{
+    transform: translate(-800px);
+    transition: 1.8s ease-in-out;
+}

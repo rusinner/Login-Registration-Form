@@ -27,6 +27,7 @@ body, input {
   transform: translateY(-50%);
   border-radius: 50%;
   z-index: 6;
+  transition: 1.8s ease-in-out;
 }
 .container .btn {
   width: 150px;
@@ -155,6 +156,7 @@ body, input {
 
 .image {
   width: 100%;
+  transition: 0.9s 0.6s ease-in-out;
 }
 
 .panels-container {
@@ -176,6 +178,7 @@ body, input {
 }
 .panels-container .content {
   color: #fff;
+  transition: 0.9s 0.6s ease-in-out;
 }
 .panels-container h3 {
   font-weight: 600;
@@ -194,4 +197,14 @@ body, input {
 }
 .panels-container .right-panel .content, .panels-container .right-panel .image {
   transform: translateX(800px);
+}
+
+.container.sign-up-mode::before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.move-left-image {
+  transform: translate(-800px);
+  transition: 1.8s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */

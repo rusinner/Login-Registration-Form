@@ -149,9 +149,14 @@ body, input {
 .container .signin-signup .sign-in-form {
   z-index: 2;
 }
-.container .sign-up-form {
-  z-index: 1;
-  opacity: 0;
+
+.signup-signup {
+  position: absolute;
+  top: 10vh;
+  transform: translateX(-100%);
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: 1.8s ease-in-out;
 }
 
 .image {
@@ -192,11 +197,13 @@ body, input {
 
 .left-panel {
   padding: 3rem 17% 2rem 12%;
+  transition: 1.8s ease-in-out;
 }
 
 .right-panel {
   padding: 3rem 12% 2rem 17%;
   transform: translateX(100%);
+  transition: 1.8s ease-in-out;
 }
 
 .container.sign-up-mode::before {
@@ -206,10 +213,14 @@ body, input {
 
 .move-left-image {
   transform: translateX(-90%);
-  transition: 1.8s ease-in-out;
 }
 
 .move-right-image {
-  transform: translateX(-30%);
-  transition: 1.8s ease-in-out;
+  transform: translateX(0%);
+}
+
+.move-signup {
+  transform: translateX(0%);
+  transition-delay: 0.5s;
+  z-index: 8;
 }/*# sourceMappingURL=styles.css.map */

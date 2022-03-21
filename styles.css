@@ -149,7 +149,7 @@ body, input {
 .container .signin-signup .sign-in-form {
   z-index: 2;
 }
-.container .signin-signup .sign-up-form {
+.container .sign-up-form {
   z-index: 1;
   opacity: 0;
 }
@@ -189,14 +189,14 @@ body, input {
   font-size: 0.95rem;
   padding: 0.7rem 0;
 }
-.panels-container .left-panel {
+
+.left-panel {
   padding: 3rem 17% 2rem 12%;
 }
-.panels-container .right-panel {
+
+.right-panel {
   padding: 3rem 12% 2rem 17%;
-}
-.panels-container .right-panel .content, .panels-container .right-panel .image {
-  transform: translateX(800px);
+  transform: translateX(100%);
 }
 
 .container.sign-up-mode::before {
@@ -205,6 +205,11 @@ body, input {
 }
 
 .move-left-image {
-  transform: translate(-800px);
+  transform: translateX(-90%);
+  transition: 1.8s ease-in-out;
+}
+
+.move-right-image {
+  transform: translateX(-30%);
   transition: 1.8s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
